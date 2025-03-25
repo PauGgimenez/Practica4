@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR7 Calvo</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script>
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+        // Dibujar cabeza calva
+        ctx.fillStyle = "#fcd7b6";
+        ctx.beginPath();
+        ctx.ellipse(200, 180, 80, 100, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Dibujar orejas
+        ctx.beginPath();
+        ctx.ellipse(115, 180, 15, 25, 0, 0, Math.PI * 2);
+        ctx.ellipse(285, 180, 15, 25, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Ojos
+        ctx.fillStyle = "white";
+        ctx.beginPath();
+        ctx.ellipse(175, 170, 20, 10, 0, 0, Math.PI * 2);
+        ctx.ellipse(225, 170, 20, 10, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(175, 170, 7, 0, Math.PI * 2);
+        ctx.arc(225, 170, 7, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Cejas
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.moveTo(160, 155);
+        ctx.lineTo(190, 155);
+        ctx.moveTo(210, 155);
+        ctx.lineTo(240, 155);
+        ctx.stroke();
+
+        // Boca
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(200, 210, 25, 0, Math.PI);
+        ctx.stroke();
+    </script>
+</body>
+</html>
