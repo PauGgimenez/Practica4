@@ -1,0 +1,13 @@
+# Forzar la detección de lenguajes usados en el repo
+*.html linguist-detectable=true
+*.html linguist-language=HTML
+*.js linguist-detectable=true
+*.js linguist-language=JavaScript
+*.sh linguist-detectable=true
+*.sh linguist-language=Shell
+*.php linguist-detectable=true
+*.php linguist-language=PHP
+*.asm linguist-detectable=true
+*.asm linguist-language=Assembly
+*.go linguist-detectable=true
+*.go linguist-language=Go
